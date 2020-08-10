@@ -11,11 +11,10 @@ namespace RobotsVsDinosaurs
         public string weaponType;
         public int weaponPower;
 
-        public Weapon(/*string type, int power*/)
+        public Weapon(string type, int power)
         {
-            //I may not need these variables set by a constructor
-            //this.weaponType = type;
-            //this.weaponPower = power;
+            this.weaponType = type;
+            this.weaponPower = power;
         }
     }
 }

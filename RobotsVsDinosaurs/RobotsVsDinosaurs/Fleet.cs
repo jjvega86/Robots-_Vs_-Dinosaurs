@@ -8,5 +8,24 @@ namespace RobotsVsDinosaurs
 {
     class Fleet
     {
+        public List<Robot> robotFleet;
+
+        public Fleet()
+        {
+            robotFleet = new List<Robot>();
+        }
+
+        public Robot CreateRobot(string name, int health, int powerLevel)
+        {
+            Robot robot = new Robot(name, health, powerLevel);
+
+            return robot;
+
+        }
+
+        public void AddRobottoFleet(Robot robot)
+        {
+            robotFleet.Add(robot);
+        }
     }
 }
