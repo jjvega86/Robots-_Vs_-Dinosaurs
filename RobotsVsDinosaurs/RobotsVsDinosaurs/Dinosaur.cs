@@ -8,5 +8,17 @@ namespace RobotsVsDinosaurs
 {
     class Dinosaur
     {
+        public string dinosaurType;
+        public int dinosaurHealth;
+        public int dinosaurEnergy;
+        public int dinosaurAttackPower;
+
+        public Dinosaur(string type, int health, int energy, int attackPower)
+        {
+            this.dinosaurType = type;
+            this.dinosaurHealth = health;
+            this.dinosaurEnergy = energy;
+            this.dinosaurAttackPower = attackPower;
+        }
     }
 }
